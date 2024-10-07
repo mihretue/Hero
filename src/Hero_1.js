@@ -31,7 +31,7 @@ export default function Hero_1() {
       
       {/* Scroll Down */}
       
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center z-10"> 
+        <div className="scroll absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center z-10"> 
           <svg width="36" height="36" className='ml-6' viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="9.40909" y="4.49893" width="17.1818" height="27.002" rx="8.59091" stroke="white" strokeWidth="0.818182" />
             <path d="M17.7603 14.8062V10.6182" stroke="white" strokeWidth="0.818182" />
