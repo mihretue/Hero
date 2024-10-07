@@ -1,38 +1,458 @@
-.App {
-  text-align: center;
+
+.parent{
+  position: relative;
+  min-height: 100vh;
+  /* padding-bottom:0vh;  */
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.my-div {
+  position: absolute;
+  width: 100vw; 
+  height: auto;
+  min-height: 100%;
+  background: url('background.svg') no-repeat center center;
+  background-size: contain ;
+  background-position: bottom;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.svg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.background-div {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  min-height: 100%;
+  background: url('heroback.svg') no-repeat center center;
+  background-size: cover; 
+}
+.join-button {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 18px 0px; 
+  gap: 10px; 
+  /* position: absolute;  */
+  width: 167px; 
+  height: 52px; 
+  left: calc(50% - 167px/2); 
+  top: 611.15px; 
+  background: #FFFFFF; 
+  box-shadow: 0px 5px 30px rgba(255, 255, 255, 0.61); 
+  border-radius: 52px;
+
+}
+.hero-div {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 18px 0px; 
+  gap: 10px; 
+  position: absolute; 
+  width: 167px; 
+  height: 52px; 
+  left: calc(50% - 167px/2); 
+  top: 611.15px; 
+  background: #FFFFFF; 
+  box-shadow: 0px 5px 30px rgba(255, 255, 255, 0.61); 
+  border-radius: 52px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.dubai-res {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18rem;
+  height: 19rem;
+  gap: 0px;
+  /* border-radius: 15.89px 0px 0px 0px; */
+  opacity: 0px;
+  margin: 6rem;
+  z-index: 1;
+  background: url('restaurantdubai.svg') no-repeat ;
+  background-size: contain;
+
+  @media screen and (max-width: 640px) {
+    margin-left: 0;
+    width: 15rem;
+    height: 15rem;
+    z-index: 1;
+    top: -6rem;
+    /* height: 0; */
+  }
+  @media screen and (max-width: 384px){
+    width: 153.54px;
+    height: 199.04px;
+    top: px;
+    left: -19px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: 0;
+  }
+}
+.header {
+  background-color: rgba(0, 0, 0, 0); /* Semi-transparent black */
+}
+.france-res {
+  position: absolute;
+  width: 29rem;
+  height: 22rem;
+  top: 545px;
+  left: 1150px;
+  gap: 0px;
+  opacity: 0px;
+  background: url('restaurantfrance.svg') no-repeat ;
+  background-size: contain;
+  @media screen and (max-width: 640px) {
+    width: 17rem;
+    left: 27rem;
+    bottom: 0;
+    margin-top: 4rem;
+    /* width: 148.04px;
+    height: 160.09px; */
+    top: 504.93px;
+    /* left: 292.33px; */
+    gap: 0px;
+    opacity: 0px;
+  }
+  @media screen and (max-width: 384px) {
+    width: 148.04px;
+    height: 160.09px;
+    top: 504.93px;
+    left: 292.33px;
+    gap: 0px;
+    opacity: 0px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.book-flight {
+  /* Box Model */
+  box-sizing: border-box;
+
+  /* Auto layout */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 13.08px 26.15px;
+  gap: 13.08px;
+
+  /* Positioning */
+  position: absolute;
+  width: 161.31px;
+  height: 51.15px;
+  left: 1635px;
+  top: 532px;
+
+  /* Background and Border */
+  background: rgba(38, 38, 38, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 31.38px;
+  @media screen and (max-width: 640px) {
+    left: -3rem;
+  }
+  @media screen and (max-width: 384px) {
+    width: Hug (100.2px)px;
+    height: Hug (34.6px)px;
+    top: 321.47px;
+    left: -56.22px;
+    padding: 8.8px 17.6px 8.8px 17.6px;
+    gap: 8.8px;
+    /* border-radius: 21.12px 0px 0px 0px; */
+    border: 0.88px 0px 0px 0px;
+    opacity: 0px;
+    angle: -0 deg;
+
+  }
+}
+.book-flight span {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.trip-ideas {
+  /* Box Model */
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 13.08px 26.15px;
+  gap: 13.08px;
+
+  /* Positioning */
+  position: absolute;
+  width: 161.31px;
+  height: 51.15px;
+  left: 1575px;
+  top: 592px;
+
+  /* Background and Border */
+  background: rgba(38, 38, 38, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 31.38px;
+  @media screen and (max-width: 640px) {
+    left: -5rem;
+  }
+  
+  @media screen and (max-width: 384px) {
+    width: Hug (85.2px)px;
+    height: Hug (34.6px)px;
+    top: 377.9px;
+    left: -75.6px;
+    padding: 8.8px 17.6px 8.8px 17.6px;
+    gap: 8.8px;
+    /* border-radius: 21.12px 0px 0px 0px; */
+    border: 0.88px 0px 0px 0px;
+    opacity: 0px;
+    angle: -0 deg;
+
+  }
+
+}
+.trip-ideas span{
+  color: white;
+}
+.carin{
+  width: 282.18px;
+  height: 93.54px;
+  top: 127px;
+  left: 1220px;
+  padding: 18.71px 42.47px 16.77px 18.71px;
+  gap: 0px;
+  border-radius: 24.94px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: url('carin.svg') no-repeat;
+  background-position: top;
+}
+.upcoming {
+  position: absolute;
+  top: 30rem;
+  left: -6rem;
+  width: 284.46px;
+  height: 398px;
+  gap: 0px;
+  border-radius: 15.89px 0px 0px 0px;
+  opacity: 10px;
+  margin: 6rem;
+  z-index: 1;
+  background: url('upcoming.svg') no-repeat ;
+  background-size: contain;
+  @media screen and (min-width: 385px) and (max-width: 648px) {
+    display: none;
+  }
+  @media screen and (max-width: 384px) {
+    width: 280px;
+    height: 122.8px;
+    top: 5.38px;
+    left: 174.08px;
+    gap: 0px;
+    opacity: 0px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.upcomingevent{
+  width: 282.18px;
+  height: 183.96px;
+  top: 287px;
+  left: 1521px;
+  gap: 0px;
+  border-radius: 24.94px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  z-index: 1;
+  background: url('upcoming.svg') no-repeat ;
+  background-size: contain;
+}
+
+.carinsurance {
+    /* Box Model */
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13.08px 26.15px;
+    gap: 13.08px;
+  
+    /* Positioning */
+    position: absolute;
+    width: 161.31px;
+    height: 51.15px;
+    left: -40px;
+    top: 502px;
+    z-index: 1;
+    /* Background and Border */
+    background: rgba(38, 38, 38, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 31.38px;
+    @media screen and (max-width: 640px) {
+      display: none;
+    }
+}
+.carinsurance span{
+  color: white;
+}
+
+
+
+.ticket {
+  position: absolute;
+  width: 268.15px;
+  height: 289.98px;
+  left: 500px;
+  bottom: -5.7rem;
+  gap: 0px;
+  opacity: 0px;
+  z-index: 1;
+  @media screen and (max-width: 640px) {
+    left: -5rem;
+    bottom: -4rem;
+    border-bottom-left-radius: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  @media screen and (max-width:384px) {
+    width: 190px;
+    height: 92.8px;
+    top: 560.38px;
+    left: 0;
+    gap: 0;
+    opacity: 1;
+    margin-left: -9rem;
+  }
+
+}
+
+.fluid {
+  width: 171.5px;
+  height: 37.65px;
+  top: 310px;
+  left: 684.25px;
+  gap: 0px;
+  opacity: 0px;
+  margin-top: 5rem;
+  @media screen and (max-width: 640px) {
+    margin-top: 7rem;
+  }
+  @media screen and (max-width: 384px){
+    width: 120px;
+    height: 21.37px;
+    padding: 0px;
+    gap: 0px;
+    opacity: 0px;
+  }
+}
+
+.fluid h1{
+  /* margin-top: 3rem; */
+  @media screen and (max-width: 640px) {
+    font-weight: lighter;
+  }
+  @media screen and (max-width: 384px){
+    width: 100px;
+    height: 18.77px;
+    top: 1.36px;
+    left: 29.8px;
+    gap: 0px;
+    /* border-radius: 0.27px 0px 0px 0px; */
+    opacity: 0px;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    /* display: flex; */
+    /* flex-direction: row; */
+
+  }
+}
+
+.contains {
+  @media screen and (max-width: 384px){
+    width: Fixed (324px)px;
+    height: Hug (315.37px)px;
+    top: 100.81px;
+    left: 30px;
+    gap: 8px;
+    opacity: 0px;
+
+  }
+}
+
+.unlock h2{
+width: 668px;
+height: 176px;
+top: 433.15px;
+left: 436px;
+gap: 0px;
+opacity: 0px;
+font-family: SF Pro Display;
+font-size: 70px;
+font-weight: 400;
+line-height: 88px;
+letter-spacing: -0.02em;
+text-align: center;
+margin-top: 4rem;
+
+@media screen and (max-width: 640px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 4rem;
+  font-size: 5rem;
+}
+@media screen and (max-width: 384px){
+  width: 324px;
+  height: 176px;
+  gap: 0px;
+  opacity: 0px;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 50.6px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  top: 204.81px;
+  left: 30px;
+}
+
+}
+.unlock span{
+  @media screen and (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.unlock button{
+  box-shadow: 0px 5px 30px 0px #FFFFFF9C;
+  border: none;
+  @media screen and (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    width: 13rem;
+    padding: 1rem;
+  }
+  @media screen and (max-width: 384px){
+    width: Fixed (167px)px;
+    height: Fixed (52px)px;
+    padding: 18px 0px 18px 0px;
+    gap: 10px;
+    /* border-radius: 52px 0px 0px 0px; */
+    opacity: 0px;
+    margin-top: 0rem;
+
   }
 }
