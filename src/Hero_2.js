@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Navbar from './Navbar'
-import { AOS } from 'aos'
+import  AOS  from 'aos'
 import 'aos/dist/aos.css'
 
 export default function Hero() {
@@ -8,7 +8,7 @@ export default function Hero() {
     AOS.init();
 }, []);
     return (
-        <div className='parent' data-aos="fade-up" data-aos-duration="3000">
+        <div className='parent' data-aos="fade-down" data-aos-duration="3000">
       {/* <Navbar /> */}
       {/* Main container */}
       <div className="relative flex flex-col items-center justify-center min-h-screen bg-black text-white">
